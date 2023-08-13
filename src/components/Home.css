@@ -1,0 +1,298 @@
+.App {
+  padding: 40px 0 0 0;
+  background-color: #ebf2f9;
+}
+
+.landingImage {
+  background-image: url('../images/home-landing.jpg');
+  background-size: cover;
+  background-position: flex;
+  height: 500px;
+}
+
+.enrollNowContainer {
+  background-color: #ebf2f9;
+  margin-top: 100px;
+}
+
+#transformYourBusiness {
+  color: #f99646;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Lucida Sans Typewriter"
+}
+
+.progeanAnimation {
+    margin-top: 50px;
+    color: #0084d7;
+    font-size: 4em;
+    font-family: sans-serif;
+    letter-spacing: .2em;
+}
+.progeanAnimation span
+{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+    -webkit-animation: animate 1s linear forwards;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+}
+    100%
+{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+
+}
+}
+
+.progeanAnimation span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.progeanAnimation span:nth-child(2)
+{
+    animation-delay: 0.5s;
+}
+.progeanAnimation span:nth-child(3)
+{
+    animation-delay: 1s;
+}
+.progeanAnimation span:nth-child(4)
+{
+    animation-delay: 1.5s;
+}
+.progeanAnimation span:nth-child(5)
+{
+    animation-delay: 2S;
+}
+.progeanAnimation span:nth-child(6)
+{
+    animation-delay: 2.5s;
+}
+.progeanAnimation span:nth-child(7)
+{
+    animation-delay: 3s;
+}
+
+.slideContent {
+  display: block;
+  width: 40%;
+}
+
+.slideHeading {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slick-slider {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  touch-action: pan-y;
+  width: 100%;
+}
+
+.sliderFile {
+  height: 500px;
+}
+
+.slideImage {
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.slideImage h5::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.slideImage img,
+.slideImage h5 {
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+.slideImage img{
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.slick-dots {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #bbb;
+  text-indent: -9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #555;
+}
+
+.footer {
+   background-color: #0084d7;
+}
+
+.footerCopyright {
+   background-color: #212b36;
+}
+
+.startYourDay {
+  color: white;
+  font-size: 65px;
+  margin-top: 30px;
+}
+
+.joinNow {
+  background-image: url('../images/joinNowButton.png');
+  background-size: cover;
+  width: 250px;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #212b36;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  animation: blinkAnimation 1s infinite, enlargeAnimation 0.5s infinite alternate;
+}
+
+@keyframes blinkAnimation {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.joinNow:hover {
+  transform: scale(2); /* Enlarge the button on hover */
+}
+
+.footerImage {
+  display: block;
+  width: 15%;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.copyright {
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutUs {
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.icons {
+	display: flex;
+	column-gap: 25px;
+	margin-left: 100px;
+}
+.icon {
+	width: 45px;
+	height: 45px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
+.icon:hover {
+	outline-offset: 4px;
+}
+.icon i {
+	margin: auto;
+}
+.icon:hover i {
+	animation: shake 0.25s;
+}
+.icon--instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+.icon--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+}
+.icon--facebook:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.icon--envelop:hover {
+	background-color: #2ea44f;
+	outline-color: #2ea44f;
+}
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+}
